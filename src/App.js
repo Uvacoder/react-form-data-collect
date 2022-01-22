@@ -46,7 +46,7 @@ function App() {
     createUserWithEmailAndPassword(auth, info.email, info.password)
       .then((userCredential) => {
         // Signed in
-        const user = userCredential.user;
+       // const user = userCredential.user;
         // ...
         const newUser = { ...info };
         newUser.success = "success";
@@ -58,7 +58,7 @@ function App() {
         newUser.error = error.message;
         setinfo(newUser);
 
-        const errorCode = error.code;
+       // const errorCode = error.code;
         const errorMessage = error.message;
         console.log(errorMessage);
         // ..
